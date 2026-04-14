@@ -1,6 +1,8 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -17,6 +19,12 @@ export default function RootLayout({
 			<head>
 				{/* Favicon */}
 				<link rel="shortcut icon" href="/img/logos/favicon.png" />
+				<link
+					rel="stylesheet"
+					href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+					integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+					crossOrigin="anonymous"
+				/>
 
 				{/* CSS */}
 				<link rel="stylesheet" href="/assets/css/plugins.css" />
@@ -30,7 +38,11 @@ export default function RootLayout({
 				<div id="preloader"></div>
 
 				{/* Main Wrapper */}
-				<div className="main-wrapper">{children}</div>
+				<div className="main-wrapper">
+					<Header />
+					{children}
+					<Footer />
+				</div>
 
 				{/* JS Scripts */}
 				<Script src="/assets/js/jquery.min.js" />

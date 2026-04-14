@@ -21,19 +21,22 @@
 			a.css("height", e));
 	}
 	(o("#preloader").fadeOut("normall", function () {
-		o(this).remove();
+		if (o(this).length) {
+			o(this).remove();
+		}
 	}),
-		t.on("scroll", function () {
-			var e = t.scrollTop(),
-				a = o(".navbar-brand img"),
-				s = o(".navbar-brand.logodefault img");
-			(e <= 50
-				? (o("header").removeClass("scrollHeader").addClass("fixedHeader"),
-					a.attr("src", "img/logos/logo-inner.png"))
-				: (o("header").removeClass("fixedHeader").addClass("scrollHeader"),
-					a.attr("src", "img/logos/logo.png")),
-				s.attr("src", "img/logos/logo.png"));
-		}),
+		// Logo switching is now handled by header-logo.js
+		// t.on("scroll", function () {
+		// 	var e = t.scrollTop(),
+		// 		a = o(".navbar-brand img"),
+		// 		s = o(".navbar-brand.logodefault img");
+		// 	(e <= 50
+		// 		? (o("header").removeClass("scrollHeader").addClass("fixedHeader"),
+		// 			a.attr("src", "img/logos/logo-inner.png"))
+		// 		: (o("header").removeClass("fixedHeader").addClass("scrollHeader"),
+		// 			a.attr("src", "img/logos/logo.png")),
+		// 		s.attr("src", "img/logos/logo.png"));
+		// }),
 		t.on("scroll", function () {
 			500 < o(this).scrollTop()
 				? o(".scroll-to-top").fadeIn(400)
