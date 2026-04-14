@@ -1,0 +1,78 @@
+{
+  "mainServices": [
+    {
+      "id": "plumbing",
+      "title": "Plumbing",
+      "description": "Professional installations and repairs for all your plumbing needs",
+      "image": "/plumbing.jpg"
+    },
+    {
+      "id": "painting",
+      "title": "Painting",
+      "description": "Expert painting, repainting and decorative services for your home",
+      "image": "/painting.jpg"
+    },
+    {
+      "id": "carpentry",
+      "title": "Carpentry",
+      "description": "Skilled carpentry installations and repairs for all woodwork needs",
+      "image": "/carpentry.jpg"
+    },
+    {
+      "id": "fences",
+      "title": "Fences",
+      "description": "Professional fence installations and repairs for security and privacy",
+      "image": "/fencing.jpg"
+    },
+    {
+      "id": "decks",
+      "title": "Decks",
+      "description": "Quality deck installations and repairs for outdoor living spaces",
+      "image": "/deck.jpg"
+    },
+    {
+      "id": "drywall",
+      "title": "Drywall",
+      "description": "Expert drywall installations and repairs for perfect walls",
+      "image": "/drywall.jpg"
+    },
+    {
+      "id": "flooring",
+      "title": "Flooring",
+      "description": "Ceramic tiles, engineered woods and hardwood - repairs and installations",
+      "image": "/flooring.jpg"
+    },
+    {
+      "id": "electrical",
+      "title": "Electrical",
+      "description": "Professional electrical repairs and installations for your safety",
+      "image": "/electrical.jpg"
+    }
+  ],
+  "specialtyServices": [
+    {
+      "id": "elderly-speciality",
+      "title": "Elderly Speciality",
+      "description": "Specialized household remodeling and renovations including wheelchair passageways",
+      "image": "/plumbing.jpg"
+    },
+    {
+      "id": "emergency-services",
+      "title": "Emergency Services",
+      "description": "Quick installations and repairs for urgent household needs",
+      "image": "/plumbing.jpg"
+    },
+    {
+      "id": "realtor-services",
+      "title": "Realtor Services",
+      "description": "Urgent fixes and repairs for quick home sales and property preparation",
+      "image": "/plumbing.jpg"
+    },
+    {
+      "id": "general-repairs",
+      "title": "General Repairs",
+      "description": "Comprehensive handyman services for all your household repair needs",
+      "image": "/plumbing.jpg"
+    }
+  ]
+}

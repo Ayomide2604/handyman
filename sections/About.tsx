@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
 	return (
 		<section className="about-style-02">
@@ -8,16 +6,10 @@ const About = () => {
 					<div className="col-lg-6 mt-1-9 mb-lg-0">
 						<div className="position-relative pb-sm-22 me-xxl-1-9">
 							<div className="about-img1 z-index-2 position-relative text-center text-sm-start">
-								<img
-									src="https://fixityhtml.websitelayout.net/img/content/about-11.jpg"
-									alt="..."
-								/>
+								<img src="/about_01.jpg" alt="..." />
 							</div>
 							<div className="about-img2 position-absolute right bottom-0 z-index-3 d-none d-sm-block">
-								<img
-									src="https://fixityhtml.websitelayout.net/img/content/about-12.jpg"
-									alt="..."
-								/>
+								<img src="/about_02.jpg" alt="..." />
 							</div>
 							<div className="position-absolute right top bg-secondary p-4 z-index-9 d-none d-sm-block">
 								<h3 className="display-7 mb-1 text-white">
@@ -29,6 +21,11 @@ const About = () => {
 									Experience
 								</p>
 							</div>
+							{/* <img
+								src="https://fixityhtml.websitelayout.net/img/content/shape-02.png"
+								className="position-absolute left-10 bottom-5 rotated d-none d-sm-block"
+								alt="..."
+							/> */}
 						</div>
 					</div>
 					<div className="col-lg-6 mt-1-9">
@@ -68,17 +65,12 @@ const About = () => {
 										/>
 									</div>
 									<div className="ps-3">
-										<h3 className="h5"> George Soyemi</h3>
+										<h3 className="h5">George Soyemi</h3>
 										<p className="mb-0">Founder</p>
 									</div>
 								</div>
 								<div>
-									<img
-										src="/signature.png"
-										className="img-fluid"
-										alt="..."
-										style={{ objectFit: "contain", maxWidth: 250 }}
-									/>
+									<img src="/signature.png" alt="..." />
 								</div>
 							</div>
 						</div>
