@@ -2,134 +2,149 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="pt-1-9 pt-sm-6 bg-dark">
+		<footer className="bg-dark text-white py-5">
 			<div className="container">
-				<div className="row border-bottom border-color-light-white pb-4 mb-1-9 mb-sm-6 align-items-center">
-					<div className="col-md-3">
-						<div className="text-start mb-4 mb-md-0">
-							<div className="footer-logo">
-								<a href="index.html">
-									<img src="/logo.png" alt="..." />
+				<div className="row">
+					{/* Company Info */}
+					<div className="col-lg-4 mb-4 mb-lg-0">
+						<div className="footer-brand mb-4">
+							<h3 className="h4 text-white mb-3">Handyman Pro</h3>
+							<p className="text-muted">
+								Professional handyman services in Edmonton. Quality workmanship,
+								reliable service, and fair pricing for all your home repair
+								needs.
+							</p>
+						</div>
+						<div className="social-links">
+							<h5 className="text-uppercase small text-secondary mb-3">
+								Follow Us
+							</h5>
+							<div className="d-flex gap-3">
+								<a href="#!" className="text-white fs-5 text-secondary-hover">
+									<i className="bi bi-facebook"></i>
+								</a>
+								<a href="#!" className="text-white fs-5 text-secondary-hover">
+									<i className="bi bi-instagram"></i>
+								</a>
+								<a
+									href="mailto:info@example.com"
+									className="text-white fs-5 text-secondary-hover"
+								>
+									<i className="bi bi-envelope"></i>
 								</a>
 							</div>
 						</div>
 					</div>
-					<div className="col-md-9">
-						<div className="d-flex justify-content-start justify-content-md-end">
-							<ul className="list-unstyled list-style02 mb-0 text-uppercase">
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<a href="https://fixityhtml.websitelayout.net/about.html">
-										About
-									</a>
-								</li>
-								<li>
-									<a href="/services">Services</a>
-								</li>
 
-								<li>
-									<a href="/contact">Contact</a>
-								</li>
-							</ul>
+					{/* Quick Links */}
+					<div className="col-lg-4 mb-4 mb-lg-0">
+						<h5 className="text-uppercase small text-secondary mb-4">
+							Quick Links
+						</h5>
+						<ul className="list-unstyled">
+							<li className="mb-2">
+								<a
+									href="/"
+									className="text-white text-secondary-hover text-decoration-none"
+								>
+									Home
+								</a>
+							</li>
+							<li className="mb-2">
+								<a
+									href="/about"
+									className="text-white text-secondary-hover text-decoration-none"
+								>
+									About Us
+								</a>
+							</li>
+							<li className="mb-2">
+								<a
+									href="/services"
+									className="text-white text-secondary-hover text-decoration-none"
+								>
+									Services
+								</a>
+							</li>
+							<li className="mb-2">
+								<a
+									href="/contact"
+									className="text-white text-secondary-hover text-decoration-none"
+								>
+									Contact
+								</a>
+							</li>
+							<li className="mb-2">
+								<a
+									href="#!"
+									className="text-white text-secondary-hover text-decoration-none"
+								>
+									Privacy Policy
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Contact Info */}
+					<div className="col-lg-4">
+						<h5 className="text-uppercase small text-secondary mb-4">
+							Get In Touch
+						</h5>
+						<ul className="list-unstyled">
+							<li className="mb-3 d-flex align-items-start">
+								<i className="bi bi-envelope me-3 mt-1 text-secondary"></i>
+								<div>
+									<a
+										href="mailto:info@example.com"
+										className="text-white text-secondary-hover text-decoration-none"
+									>
+										info@example.com
+									</a>
+								</div>
+							</li>
+							<li className="mb-3 d-flex align-items-start">
+								<i className="bi bi-telephone me-3 mt-1 text-secondary"></i>
+								<div>
+									<a
+										href="tel:+17808026830"
+										className="text-white text-secondary-hover text-decoration-none"
+									>
+										+1 (780) 802-6830
+									</a>
+								</div>
+							</li>
+							<li className="mb-3 d-flex align-items-start">
+								<i className="bi bi-geo-alt me-3 mt-1 text-secondary"></i>
+								<div className="text-white">
+									123, Street Name
+									<br />
+									Edmonton, Alberta
+									<br />
+									Canada
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				{/* Bottom Bar */}
+				<div className="border-top border-secondary mt-4 pt-4">
+					<div className="row align-items-center">
+						<div className="col-md-6">
+							<p className="mb-0 text-muted">
+								© {new Date().getFullYear()} Handyman Pro. All rights reserved.
+							</p>
 						</div>
-					</div>
-				</div>
-				<div className="row border-bottom border-color-light-white pb-1-9 pb-sm-6 mb-1-9 mt-n1-9">
-					<div className="col-md-4 mt-1-9">
-						<h3 className="text-secondary text-uppercase mb-3 mb-md-4 h5 letter-spacing-1">
-							Contact
-						</h3>
-						<ul className="list-unstyled display-md-29 display-xl-28">
-							<li>
+						<div className="col-md-6 text-md-end">
+							<p className="mb-0 text-muted">
+								Designed by{" "}
 								<a
-									href="mailto:info@yourdomain.com"
-									className="text-white text-secondary-hover"
+									href="#!"
+									className="text-secondary text-white-hover text-decoration-none"
 								>
-									info@example.com
-								</a>
-							</li>
-							<li>
-								<a
-									href="mailto:info@yourdomain.com"
-									className="text-white text-secondary-hover"
-								>
-									info@domain.com
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div className="col-md-4 mt-1-9 text-md-center">
-						<h3 className="text-secondary text-uppercase mb-3 mb-md-4 h5 letter-spacing-1">
-							Support
-						</h3>
-						<ul className="list-unstyled display-md-29 display-xl-28">
-							<li>
-								<a
-									href="tel:+44123456789"
-									className="text-white text-secondary-hover"
-								>
-									(+44) 123 456 789
-								</a>
-							</li>
-							<li>
-								<a
-									href="tel:+44152567987"
-									className="text-white text-secondary-hover"
-								>
-									(+44) 152-567-987
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div className="col-md-4 mt-1-9 text-md-end">
-						<h3 className="text-secondary text-uppercase mb-3 mb-md-4 h5 letter-spacing-1">
-							Address
-						</h3>
-						<address className="mb-0 display-md-29 display-xl-28 text-white">
-							— New York <br />
-							18 N 3rd E Street Downey,
-							<br />
-							Lechase Park, United States.
-						</address>
-					</div>
-				</div>
-				<div className="row align-items-center pb-4">
-					<div className="col-md-7 order-2 order-md-1">
-						<div className="text-center text-md-start mt-1-9 mt-md-0">
-							<p className="d-inline-block text-white mb-0">
-								© <span className="current-year" /> Powered by{" "}
-								<a href="#!" className="text-secondary text-white-hover">
 									Webstride Studios
 								</a>
 							</p>
-						</div>
-					</div>
-					<div className="col-md-5 order-1 order-md-2">
-						<div className="d-flex justify-content-center justify-content-md-end">
-							<ul className="social-icon-style01 list-unstyled mb-0">
-								<li>
-									<a href="#!">
-										<i className="ti-facebook" />
-									</a>
-								</li>
-								<li>
-									<a href="#!">
-										<i className="ti-twitter-alt" />
-									</a>
-								</li>
-								<li>
-									<a href="#!">
-										<i className="ti-linkedin" />
-									</a>
-								</li>
-								<li>
-									<a href="#!">
-										<i className="ti-instagram" />
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>

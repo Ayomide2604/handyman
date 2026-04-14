@@ -2,46 +2,102 @@ import React from "react";
 
 const ServiceHeroSection = () => {
 	return (
-		<section className="pb-xl-24">
-			<div className="container pb-xxl-6">
-				<div className="row mt-n5">
-					<div className="col-lg-6 col-xl-5 mt-5">
-						<div className="position-relative text-center text-sm-start">
-							<img
-								src="https://fixityhtml.websitelayout.net/img/services/service-10.jpg"
-								alt="..."
-							/>
-							<div className="position-absolute p-5 bg-primary right-5 right-lg-n10 bottom-n5 bottom-lg-n30 w-70 d-none d-sm-block">
-								<div className="mb-3">
-									<i className="ti-stats-up text-white display-15" />
+		<section className="position-relative z-index-9 bg-light">
+			<div className="container">
+				<div className="row align-items-center">
+					<div className="col-lg-6">
+						<div className="pe-lg-5">
+							<div className="heading-style01 mb-4">
+								<span className="small-text">Professional Services</span>
+								<h2 className="display-5">
+									Expert Handyman Services in Edmonton
+								</h2>
+							</div>
+							<p className="mb-4">
+								Your trusted local handyman service provider in Edmonton. We
+								offer comprehensive home repair and improvement solutions with
+								professional craftsmanship and reliable service. From plumbing
+								and electrical to painting and carpentry, we've got all your
+								handyman needs covered.
+							</p>
+							<div className="d-flex gap-3 mb-4">
+								<a href="/contact" className="butn">
+									Get Free Quote
+								</a>
+								<a href="tel:+17808026830" className="butn secondary">
+									Call (780) 802-6830
+								</a>
+							</div>
+							<div className="row g-3">
+								<div className="col-6">
+									<div className="d-flex align-items-center">
+										<div className="flex-shrink-0">
+											<div
+												className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+												style={{ width: "40px", height: "40px" }}
+											>
+												<i className="bi bi-check-lg"></i>
+											</div>
+										</div>
+										<div className="flex-grow-1 ms-3">
+											<h6 className="mb-0">Licensed & Insured</h6>
+										</div>
+									</div>
 								</div>
-								<h3 className="h4 text-white">Awards recieved</h3>
-								<p className="text-white mb-0 font-weight-100">
-									Our agency manages of digital support services to
-									businesses.
-								</p>
+								<div className="col-6">
+									<div className="d-flex align-items-center">
+										<div className="flex-shrink-0">
+											<div
+												className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+												style={{ width: "40px", height: "40px" }}
+											>
+												<i className="bi bi-check-lg"></i>
+											</div>
+										</div>
+										<div className="flex-grow-1 ms-3">
+											<h6 className="mb-0">Local Edmonton</h6>
+										</div>
+									</div>
+								</div>
+								<div className="col-6">
+									<div className="d-flex align-items-center">
+										<div className="flex-shrink-0">
+											<div
+												className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+												style={{ width: "40px", height: "40px" }}
+											>
+												<i className="bi bi-check-lg"></i>
+											</div>
+										</div>
+										<div className="flex-grow-1 ms-3">
+											<h6 className="mb-0">Satisfaction Guaranteed</h6>
+										</div>
+									</div>
+								</div>
+								<div className="col-6">
+									<div className="d-flex align-items-center">
+										<div className="flex-shrink-0">
+											<div
+												className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+												style={{ width: "40px", height: "40px" }}
+											>
+												<i className="bi bi-check-lg"></i>
+											</div>
+										</div>
+										<div className="flex-grow-1 ms-3">
+											<h6 className="mb-0">24/7 Emergency</h6>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-6 col-xl-7 mt-5">
-						<div className="ps-lg-5 ps-xxl-0">
-							<div className="heading-style01 mb-1-9 mb-xl-5">
-								<span className="small-text">Our Service</span>
-								<h2 className="display-5">
-									We protect your business, You'll have no more worries!
-								</h2>
-							</div>
-							<div className="ps-lg-8 ps-xxl-24">
-								<p className="mb-1-9 mb-sm-2-9 lead font-weight-500">
-									An organization or entrepreneurial entity engaged in
-									commercial, industrial, or professional activities is
-									referred to as a business.
-								</p>
-								<a href="about.html" className="butn secondary">
-									<span>Learn More</span>
-								</a>
-							</div>
-						</div>
+					<div className="col-lg-6">
+						<img
+							src="https://fixityhtml.websitelayout.net/img/content/about-img-06.jpg"
+							alt="Handyman Services"
+							className="img-fluid rounded-4 shadow-lg"
+						/>
 					</div>
 				</div>
 			</div>

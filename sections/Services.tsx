@@ -1,4 +1,9 @@
+"use client";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import servicesData from "../data/services.json";
 
 const Services = () => {
@@ -9,10 +14,34 @@ const Services = () => {
 					<span className="small-text">Our Services</span>
 					<h2 className="display-5">Professional Handyman Services</h2>
 				</div>
-				<div className="row gx-xxl-5 mt-n1-9">
+
+				<Swiper
+					modules={[Pagination]}
+					spaceBetween={30}
+					slidesPerView={1}
+					breakpoints={{
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						768: {
+							slidesPerView: 2,
+							spaceBetween: 25,
+						},
+						1024: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						},
+					}}
+					pagination={{
+						clickable: true,
+						el: ".swiper-pagination",
+					}}
+					className="services-swiper"
+				>
 					{servicesData.mainServices.map((service) => (
-						<div key={service.id} className="col-md-6 col-xl-4 mt-1-9">
-							<div className="card rounded-0 border-0 card-style05">
+						<SwiperSlide key={service.id}>
+							<div className="card rounded-0 border-0 card-style05 h-100">
 								<div className="card-body">
 									<div className="text-center mb-3">
 										<img
@@ -30,14 +59,17 @@ const Services = () => {
 										<div className="blue-bg" />
 										<div className="card-text">
 											<h3 className="h5 mb-0">
-												<a href={`#${service.id}`}>{service.title}</a>
+												<a href={`/services/${service.id}`}>{service.title}</a>
 											</h3>
 											<div className="text">
 												<p className="mb-0">{service.description}</p>
 											</div>
 										</div>
 										<div className="card-butn">
-											<a href={`#${service.id}`} className="text-white">
+											<a
+												href={`/services/${service.id}`}
+												className="text-white"
+											>
 												More Details
 												<span className="align-middle ms-2">»</span>
 											</a>
@@ -45,9 +77,17 @@ const Services = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</SwiperSlide>
 					))}
-				</div>
+					<div
+						className="swiper-pagination"
+						style={{
+							marginTop: "20px",
+							marginBottom: "20px",
+							position: "relative",
+						}}
+					></div>
+				</Swiper>
 
 				<div className="row mt-5">
 					<div className="col-12">
