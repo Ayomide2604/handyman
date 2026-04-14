@@ -1,13 +1,14 @@
+import React from "react";
 import PageBanner from "@/components/PageBanner";
 
-const AboutPageTitleSection = () => {
+const PageTitle = () => {
 	return (
 		<PageBanner
-			title="About Us"
+			title="Services"
 			backgroundImage="https://fixityhtml.websitelayout.net/img/banner/page-title-01.jpg"
-			breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
+			breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
 		/>
 	);
 };
 
-export default AboutPageTitleSection;
+export default PageTitle;

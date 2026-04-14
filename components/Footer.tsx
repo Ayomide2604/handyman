@@ -9,7 +9,7 @@ const Footer = () => {
 						<div className="text-start mb-4 mb-md-0">
 							<div className="footer-logo">
 								<a href="index.html">
-									<img src="/logo-dark.png" alt="..." />
+									<img src="/logo.png" alt="..." />
 								</a>
 							</div>
 						</div>
@@ -26,9 +26,7 @@ const Footer = () => {
 									</a>
 								</li>
 								<li>
-									<a href="https://fixityhtml.websitelayout.net/portfolio.html">
-										Services
-									</a>
+									<a href="/services">Services</a>
 								</li>
 
 								<li>

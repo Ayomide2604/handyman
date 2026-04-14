@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
+import "./Header.css";
+
 const Header = () => {
 	const logoDefaultRef = useRef<HTMLImageElement>(null);
 	const logoScrolledRef = useRef<HTMLImageElement>(null);
@@ -58,13 +60,13 @@ const Header = () => {
 											<img
 												ref={logoDefaultRef}
 												className="logo-default"
-												src="/logo-dark.png"
+												src="/logo.png"
 												alt="logo"
 											/>
 											<img
 												ref={logoScrolledRef}
 												className="logo-scrolled"
-												src="/logo1.png"
+												src="/logo-dark.png"
 												alt="logo"
 												style={{ display: "none" }}
 											/>
@@ -85,7 +87,7 @@ const Header = () => {
 											<a href="/about">About</a>
 										</li>
 										<li>
-											<a href="/#services">Services</a>
+											<a href="/services">Services</a>
 										</li>
 										<li>
 											<a href="/contact">Contact Us</a>

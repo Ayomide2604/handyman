@@ -77,7 +77,7 @@ const About = () => {
 										src="/signature.png"
 										className="img-fluid"
 										alt="..."
-										style={{ objectFit: "contain" }}
+										style={{ objectFit: "contain", maxWidth: 250 }}
 									/>
 								</div>
 							</div>

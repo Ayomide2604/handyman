@@ -1,0 +1,34 @@
+/* Logo styling for consistent sizing and responsiveness */
+.logo-default,
+.logo-scrolled {
+  width: 150px !important;
+  height: auto !important;
+  max-width: 100% !important;
+  transition: all 0.3s ease;
+}
+
+/* Responsive logo sizes */
+@media (max-width: 768px) {
+  .logo-default,
+  .logo-scrolled {
+    width: 120px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-default,
+  .logo-scrolled {
+    width: 100px !important;
+  }
+}
+
+/* Ensure navbar brand doesn't add extra padding */
+.navbar-brand {
+  padding: 0;
+}
+
+/* Logo container styling */
+.navbar-header-custom {
+  display: flex;
+  align-items: center;
+}
