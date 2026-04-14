@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -8,12 +9,39 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode;
-}>) {
+}) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<head>
+				{/* Favicon */}
+				<link rel="shortcut icon" href="/img/logos/favicon.png" />
+
+				{/* CSS */}
+				<link rel="stylesheet" href="/assets/css/plugins.css" />
+				<link rel="stylesheet" href="/assets/css/search.css" />
+				<link rel="stylesheet" href="/assets/css/base.css" />
+				<link rel="stylesheet" href="/assets/css/styles.css" />
+			</head>
+
+			<body>
+				{/* Preloader */}
+				<div id="preloader"></div>
+
+				{/* Main Wrapper */}
+				<div className="main-wrapper">{children}</div>
+
+				{/* JS Scripts */}
+				<Script src="/assets/js/jquery.min.js" />
+				<Script src="/assets/js/popper.min.js" />
+				<Script src="/assets/js/bootstrap.min.js" />
+				<Script src="/assets/js/core.min.js" />
+				<Script src="/assets/js/search.js" />
+				<Script src="/assets/js/main.js" />
+				<Script src="/assets/js/plugins.js" />
+				<Script src="/assets/js/scripts.js" />
+			</body>
 		</html>
 	);
 }
