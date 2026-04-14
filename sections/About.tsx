@@ -74,8 +74,10 @@ const About = () => {
 								</div>
 								<div>
 									<img
-										src="https://fixityhtml.websitelayout.net/img/content/ceo-sign.png"
+										src="/signature.png"
+										className="img-fluid"
 										alt="..."
+										style={{ objectFit: "contain" }}
 									/>
 								</div>
 							</div>
