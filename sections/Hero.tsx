@@ -21,7 +21,7 @@ const Hero = () => {
 				<div className="container d-flex flex-column">
 					<div className="row align-items-center min-vh-100 pt-6 pt-md-0">
 						<div className="col-md-10 col-lg-8 col-xl-7 col-xxl-7 mb-1-9 mb-lg-0 pt-12 pb-12 py-sm-6 banner-heading">
-							<span className="text-secondary text-uppercase small letter-spacing-2 d-block font-weight-700 mb-3 d-block small-title">
+							<span className="text-secondary text-uppercase small letter-spacing-2 d-block font-weight-700 mb-3 d-block small-title mt-5">
 								Professional Handyman Services in Edmonton Area
 							</span>
 							<h1 className="text-white mb-2-2 display-3 font-weight-800 title">

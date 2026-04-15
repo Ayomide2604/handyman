@@ -66,20 +66,21 @@ const Header = () => {
 										<a href="/" className="navbar-brand">
 											<Image
 												ref={logoDefaultRef}
-												className="logo-default"
+												className="logo-default ms-3"
 												src="/logo.png"
 												alt="Handyman Pro Plus Logo"
 												width={150}
 												height={50}
+												style={{ display: "none", transform: "scale(1.5)" }}
 											/>
 											<Image
 												ref={logoScrolledRef}
-												className="logo-scrolled"
+												className="logo-scrolled ms-3"
 												src="/logo-dark.png"
 												alt="Handyman Pro Plus Logo"
 												width={150}
 												height={50}
-												style={{ display: "none" }}
+												style={{ display: "none", transform: "scale(1.5)" }}
 											/>
 										</a>
 										{/* end logo */}
