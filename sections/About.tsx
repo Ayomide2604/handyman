@@ -55,7 +55,9 @@ const About = () => {
 									We are Award Winning Company
 								</li>
 							</ul>
-							<div className="d-sm-flex justify-content-between align-items-center">
+
+							{/* Signature Section */}
+							{/* <div className="d-sm-flex justify-content-between align-items-center">
 								<div className="d-flex mb-4 mb-sm-0">
 									<div>
 										<img
@@ -72,7 +74,7 @@ const About = () => {
 								<div>
 									<img src="/signature.png" alt="..." />
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
