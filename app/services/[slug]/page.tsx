@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import PageBanner from "@/components/PageBanner";
 import servicesData from "@/data/services.json";
 import { getServiceContent } from "@/data/serviceContent";
+import { Metadata } from "next";
 
 interface Service {
 	id: string;
@@ -15,6 +16,39 @@ interface ServicePageProps {
 	params: Promise<{
 		slug: string;
 	}>;
+}
+
+export async function generateMetadata({
+	params,
+}: ServicePageProps): Promise<Metadata> {
+	const { slug } = await params;
+	const allServices = [
+		...servicesData.mainServices,
+		...servicesData.specialtyServices,
+	];
+	const service = allServices.find((s) => s.id === slug);
+	const detail = getServiceContent(slug);
+
+	if (!service || !detail) {
+		return {
+			title: "Service Not Found - Handyman Edmonton",
+			description: "The requested handyman service is not available.",
+		};
+	}
+
+	return {
+		title: `${detail.title} Services in Edmonton | Professional ${detail.title} Repairs & Installation`,
+		description: `Expert ${detail.title.toLowerCase()} services in Edmonton. Professional ${detail.title.toLowerCase()} repairs, installation, and maintenance by experienced handymen. Serving Edmonton and surrounding areas.`,
+		keywords: `${detail.title.toLowerCase()} Edmonton, ${detail.title.toLowerCase()} services Edmonton, ${detail.title.toLowerCase()} repairs Edmonton, ${detail.title.toLowerCase()} installation Edmonton, professional ${detail.title.toLowerCase()} Edmonton, handyman ${detail.title.toLowerCase()} Edmonton`,
+		authors: [{ name: "Handyman Pro Plus" }],
+		openGraph: {
+			title: `${detail.title} Services in Edmonton | Professional ${detail.title} Repairs & Installation`,
+			description: `Expert ${detail.title.toLowerCase()} services in Edmonton. Professional ${detail.title.toLowerCase()} repairs, installation, and maintenance by experienced handymen. Serving Edmonton and surrounding areas.`,
+			type: "website",
+			locale: "en_CA",
+		},
+		robots: "index, follow",
+	};
 }
 
 const ServicePage = async ({ params }: ServicePageProps) => {
@@ -93,7 +127,6 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 											Get a Free Quote
 										</a>
 									</div>
-									
 								</div>
 							</div>
 						</div>
