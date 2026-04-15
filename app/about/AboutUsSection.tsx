@@ -32,24 +32,14 @@ const AboutUsSection = () => {
 					<div className="col-lg-6 mt-5">
 						<div className="text-end position-relative">
 							<Image
-								src="https://fixityhtml.websitelayout.net/img/content/about-img-06.jpg"
+								src="/about_us_02.jpg"
 								alt="Professional handyman team working on home project"
 								width={600}
-								height={400}
-								className="img-fluid rounded-4"
+								height={200}
+								className=" rounded-4"
+								style={{ objectFit: "cover", objectPosition: "center top" }}
 							/>
-							<div className="position-absolute bottom-n15 left-n5 d-none d-md-block">
-								<Image
-									src="https://fixityhtml.websitelayout.net/img/content/about-img-07.jpg"
-									alt="Completed handyman project"
-									width={200}
-									height={150}
-									className="img-fluid rounded-4"
-									style={{
-										border: "4px solid white",
-									}}
-								/>
-							</div>
+							
 						</div>
 					</div>
 				</div>

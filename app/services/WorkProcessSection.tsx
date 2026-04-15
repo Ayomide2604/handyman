@@ -4,28 +4,32 @@ const WorkProcessSection = () => {
 	const processes = [
 		{
 			id: 1,
-			title: "Business Planning",
-			description: "Taking seamless key performance indicators.",
-			icon: "https://fixityhtml.websitelayout.net/img/icons/icon-04.png"
+			title: "Free Estimate",
+			description:
+				"Contact us for a detailed, no-obligation quote tailored to your specific handyman needs.",
+			icon: "bi-calculator",
 		},
 		{
 			id: 2,
-			title: "Human Resources",
-			description: "Engage fully tested process improvement platforms.",
-			icon: "https://fixityhtml.websitelayout.net/img/icons/icon-05.png"
+			title: "Schedule Service",
+			description:
+				"We'll work around your schedule to find the perfect time for your handyman project.",
+			icon: "bi-calendar-check",
 		},
 		{
 			id: 3,
-			title: "Strategic Planning",
-			description: "Leverage other resource leveling convergence.",
-			icon: "https://fixityhtml.websitelayout.net/img/icons/icon-06.png"
+			title: "Professional Work",
+			description:
+				"Our experienced team completes the job with quality craftsmanship and attention to detail.",
+			icon: "bi-tools",
 		},
 		{
 			id: 4,
-			title: "Worldwide Coverage",
-			description: "Globally network focused material products.",
-			icon: "https://fixityhtml.websitelayout.net/img/icons/icon-07.png"
-		}
+			title: "Satisfaction Guaranteed",
+			description:
+				"We ensure you're 100% satisfied with our work before we consider the job complete.",
+			icon: "bi-shield-check",
+		},
 	];
 
 	return (
@@ -43,17 +47,14 @@ const WorkProcessSection = () => {
 									<div className="icon-holder d-inline-block text-center position-relative mb-1-6 mb-lg-2-6">
 										<div className="box" />
 										<span className="img-box">
-											<img
-												src={process.icon}
-												alt={process.title}
-											/>
+											<i
+												className={`bi ${process.icon} display-1 text-primary`}
+											></i>
 										</span>
 									</div>
 									<div className="text-center">
 										<h4>{process.title}</h4>
-										<p className="mb-0">
-											{process.description}
-										</p>
+										<p className="mb-0">{process.description}</p>
 									</div>
 								</div>
 							</div>

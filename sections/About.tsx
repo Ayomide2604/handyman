@@ -9,37 +9,16 @@ const About = () => {
 						<div className="position-relative pb-sm-22 me-xxl-1-9">
 							<div className="about-img1 z-index-2 position-relative text-center text-sm-start">
 								<Image
-									src="/about_01.jpg"
+									src="/about_us.jpg"
 									alt="Professional handyman at work"
 									width={400}
 									height={500}
 									className="img-fluid"
+									// style={{ objectFit: "contain" }}
 								/>
 							</div>
-							<div className="about-img2 position-absolute right bottom-0 z-index-3 d-none d-sm-block">
-								<Image
-									src="/about_02.jpg"
-									alt="Completed handyman project"
-									width={200}
-									height={250}
-									className="img-fluid"
-								/>
-							</div>
-							<div className="position-absolute right top bg-secondary p-4 z-index-9 d-none d-sm-block">
-								<h3 className="display-7 mb-1 text-white">
-									<span className="countup">25</span>
-									<span>+</span>
-								</h3>
-								<p className="mb-0 text-white">
-									Years of <br />
-									Service Excellence
-								</p>
-							</div>
-							{/* <img
-								src="https://fixityhtml.websitelayout.net/img/content/shape-02.png"
-								className="position-absolute left-10 bottom-5 rotated d-none d-sm-block"
-								alt="..."
-							/> */}
+
+							
 						</div>
 					</div>
 					<div className="col-lg-6 mt-1-9">

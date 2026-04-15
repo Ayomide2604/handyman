@@ -28,9 +28,15 @@ const MissionSection = () => {
 								</h2>
 							</div>
 							<p className="mb-1-9">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-								do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								Ut enim ad minim veniam, nostrud exercitation ullamco.
+								With over 25 years of experience serving Edmonton and
+								surrounding communities, Handyman Pro Plus is committed to
+								delivering exceptional craftsmanship and reliable service. Our
+								mission is to provide homeowners with affordable, professional
+								handyman solutions that exceed expectations. From emergency
+								repairs to complete renovations, we treat every project with the
+								same dedication to quality and customer satisfaction that has
+								built our reputation as Edmonton's trusted handyman service
+								provider.
 							</p>
 							<a href="about.html" className="butn md">
 								Read More

@@ -96,7 +96,7 @@ const ServiceHeroSection = () => {
 					</div>
 					<div className="col-lg-6">
 						<Image
-							src="https://fixityhtml.websitelayout.net/img/content/about-img-06.jpg"
+							src="/services.jpg"
 							alt="Professional handyman services in Edmonton area"
 							width={600}
 							height={400}

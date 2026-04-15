@@ -111,15 +111,6 @@ const Services = () => {
 					{servicesData.specialtyServices.map((service) => (
 						<div key={service.id} className="col-md-6 col-lg-3 mt-1-9">
 							<div className="text-center">
-								<div className="mb-3">
-									<Image
-										src={service.image}
-										alt={`Professional ${service.title} services`}
-										width={64}
-										height={64}
-										className="display-4"
-									/>
-								</div>
 								<h5 className="h6 mb-2">{service.title}</h5>
 								<p className="mb-0 small">{service.description}</p>
 							</div>

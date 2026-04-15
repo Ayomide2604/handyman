@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ContactFormSection = () => {
 	const [formData, setFormData] = useState({
@@ -144,7 +145,14 @@ const ContactFormSection = () => {
 						</div>
 					</div>
 					<div className="col-lg-6 mt-5 d-none d-lg-block">
-						<img src="/img/content/contact-01.jpg" alt="Contact Us" />
+						<Image
+							src="/contact.jpg"
+							alt="Contact Us"
+							width={600}
+							height={400}
+							className="img-fluid"
+							style={{ objectFit: "cover" }}
+						/>
 					</div>
 				</div>
 			</div>
