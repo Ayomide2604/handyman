@@ -21,9 +21,7 @@ export const metadata: Metadata = {
 		locale: "en_CA",
 	},
 	robots: "index, follow",
-	verification: {
-		google: "your-google-verification-code",
-	},
+	
 };
 
 export default function RootLayout({
@@ -34,8 +32,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				{/* Favicon */}
-				<link rel="shortcut icon" href="/img/logos/favicon.png" />
+				{/* Enhanced favicon for all devices */}
+				<link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" />
+				<link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" />
+				<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+				<link rel="manifest" href="/favicon/site.webmanifest" />
+				<meta name="theme-color" content="#063b8b" />
+				<meta name="msapplication-TileColor" content="#063b8b" />
 				<link
 					rel="stylesheet"
 					href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
