@@ -10,13 +10,23 @@ const ContactFormSection = () => {
 		e.preventDefault();
 		setIsSubmitting(true);
 
+		// Get form data and set reply-to
+		const form = e.target as HTMLFormElement;
+		const formData = new FormData(form);
+		const userEmail = formData.get('email') as string;
+
+		// Set reply-to to user's email for easy replying
+		const replytoField = form.querySelector('input[name="_replyto"]') as HTMLInputElement;
+		if (replytoField && userEmail) {
+			replytoField.value = userEmail;
+		}
+
 		// Show success message after a short delay
 		setTimeout(() => {
 			setIsSubmitting(false);
 			setShowSuccess(true);
 
 			// Clear form immediately when success shows
-			const form = e.target as HTMLFormElement;
 			form.reset();
 
 			// Hide success message after 5 seconds
@@ -41,20 +51,22 @@ const ContactFormSection = () => {
 								method="POST"
 								onSubmit={handleSubmit}
 							>
-								<input
-									type="hidden"
-									name="_subject"
-									value="New Contact Form Submission"
-								/>
-								<input type="hidden" name="_template" value="table" />
-								<div className="quform-elements">
-									<div className="row">
-										{/* Name Input */}
-										<div className="col-md-6">
-											<div className="quform-element form-group mb-3">
-												<label htmlFor="name">
-													Your Name <span className="quform-required">*</span>
-												</label>
+								<input type="hidden" name="_replyto" value="" />
+								{/* Name Input */}
+								<div className="col-md-6">
+									<div className="quform-element form-group mb-3">
+										<label htmlFor="name">
+											Your Name <span className="quform-required">*</span>
+										</label>
+										<div className="quform-input">
+											<input
+												className="form-control"
+												id="name"
+												type="text"
+												name="name"
+												placeholder="Your name here"
+												required
+											/>
 												<div className="quform-input">
 													<input
 														className="form-control"
@@ -161,6 +173,7 @@ const ContactFormSection = () => {
 												</button>
 											</div>
 										</div>
+									</div>
 									</div>
 								</div>
 							</form>
