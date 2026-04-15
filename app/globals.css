@@ -1,3 +1,23 @@
+/*
+ * Theme CSS (styles.css) still references "Font Awesome 5 Free" for some
+ * :before/:after icons. plugins.css registers FA6 only; alias FA5 names to the
+ * same webfonts copied into /assets/fonts/ by scripts/copy-fontawesome.mjs.
+ */
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url("/assets/fonts/fa-solid-900.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+	src: url("/assets/fonts/fa-solid-900.woff2") format("woff2");
+}
+
 * {
 	margin: 0;
 	padding: 0;

@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Font Awesome webfonts copied from @fortawesome/fontawesome-free (postinstall / build)
+/public/assets/fonts/fa-*.woff2
+/public/assets/fonts/fa-*.ttf

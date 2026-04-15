@@ -26,7 +26,7 @@ export default function RootLayout({
 					crossOrigin="anonymous"
 				/>
 
-				{/* Font Awesome: rules live in plugins.css; webfonts are self-hosted under /assets/fonts/ (matches @font-face paths). Avoids CDN/SRI failures on production. */}
+				{/* Font Awesome rules are in plugins.css; webfonts are copied to /assets/fonts/ by scripts/copy-fontawesome.mjs on postinstall/build (from @fortawesome/fontawesome-free). */}
 
 				{/* CSS */}
 				<link rel="stylesheet" href="/assets/css/plugins.css" />
