@@ -10,10 +10,16 @@ const Footer = () => {
 						<div className="footer-brand mb-4">
 							<h3 className="h4 text-white mb-3">Handyman Pro</h3>
 							<p className="text-muted">
-								Professional handyman services in Edmonton. Quality workmanship,
-								reliable service, and fair pricing for all your home repair
-								needs.
+								Professional handyman services in Edmonton and surrounding
+								areas. Quality workmanship, reliable service, and fair pricing
+								for all your home repair needs.
 							</p>
+							<div className="mt-3">
+								<p className="text-muted small mb-1">
+									<strong>Service Areas:</strong> Edmonton, Sherwood Park, St.
+									Albert, Leduc, Stony Plain
+								</p>
+							</div>
 						</div>
 						<div className="social-links">
 							<h5 className="text-uppercase small text-secondary mb-3">
@@ -27,7 +33,7 @@ const Footer = () => {
 									<i className="bi bi-instagram"></i>
 								</a>
 								<a
-									href="mailto:info@example.com"
+									href="mailto:info@handymanpro.ca"
 									className="text-white fs-5 text-secondary-hover"
 								>
 									<i className="bi bi-envelope"></i>
@@ -95,10 +101,10 @@ const Footer = () => {
 								<i className="bi bi-envelope me-3 mt-1 text-secondary"></i>
 								<div>
 									<a
-										href="mailto:info@example.com"
+										href="mailto:info@handymanpro.ca"
 										className="text-white text-secondary-hover text-decoration-none"
 									>
-										info@example.com
+										info@handymanpro.ca
 									</a>
 								</div>
 							</li>
@@ -116,9 +122,9 @@ const Footer = () => {
 							<li className="mb-3 d-flex align-items-start">
 								<i className="bi bi-geo-alt me-3 mt-1 text-secondary"></i>
 								<div className="text-white">
-									123, Street Name
+									Serving Edmonton & Area
 									<br />
-									Edmonton, Alberta
+									Edmonton, Alberta T5X 0A1
 									<br />
 									Canada
 								</div>

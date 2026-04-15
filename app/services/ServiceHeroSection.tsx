@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ServiceHeroSection = () => {
 	return (
@@ -10,12 +11,13 @@ const ServiceHeroSection = () => {
 							<div className="heading-style01 mb-4">
 								<span className="small-text">Professional Services</span>
 								<h2 className="display-5">
-									Expert Handyman Services in Edmonton
+									Expert Handyman Services in Edmonton Area
 								</h2>
 							</div>
 							<p className="mb-4">
-								Your trusted local handyman service provider in Edmonton. We
-								offer comprehensive home repair and improvement solutions with
+								Your trusted local handyman service provider serving Edmonton,
+								Sherwood Park, St. Albert, Leduc, and Stony Plain. We offer
+								comprehensive home repair and improvement solutions with
 								professional craftsmanship and reliable service. From plumbing
 								and electrical to painting and carpentry, we've got all your
 								handyman needs covered.
@@ -93,9 +95,11 @@ const ServiceHeroSection = () => {
 						</div>
 					</div>
 					<div className="col-lg-6">
-						<img
+						<Image
 							src="https://fixityhtml.websitelayout.net/img/content/about-img-06.jpg"
-							alt="Handyman Services"
+							alt="Professional handyman services in Edmonton area"
+							width={600}
+							height={400}
 							className="img-fluid rounded-4 shadow-lg"
 						/>
 					</div>

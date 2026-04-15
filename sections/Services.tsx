@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 import servicesData from "../data/services.json";
 
 const Services = () => {
@@ -44,13 +45,13 @@ const Services = () => {
 							<div className="card rounded-0 border-0 card-style05 h-100">
 								<div className="card-body">
 									<div className="text-center mb-3">
-										<img
+										<Image
 											src={service.image}
-											alt={service.title}
-											className="img-fluid w-100"
+											alt={`Professional ${service.title} services in Edmonton`}
+											width={300}
+											height={200}
+											className="img-fluid"
 											style={{
-												height: "200px",
-												objectFit: "cover",
 												borderRadius: "8px",
 											}}
 										/>
@@ -103,9 +104,11 @@ const Services = () => {
 						<div key={service.id} className="col-md-6 col-lg-3 mt-1-9">
 							<div className="text-center">
 								<div className="mb-3">
-									<img
+									<Image
 										src={service.image}
-										alt={service.title}
+										alt={`Professional ${service.title} services`}
+										width={64}
+										height={64}
 										className="display-4"
 									/>
 								</div>
@@ -123,9 +126,12 @@ const Services = () => {
 				</div>
 			</div>
 			<div className="position-absolute top-0 right-1 opacity1 shape-img-one">
-				<img
+				<Image
 					src="https://fixityhtml.websitelayout.net/img/content/shape-14.png"
-					alt="..."
+					alt="Decorative shape"
+					width={100}
+					height={100}
+					className="img-fluid"
 				/>
 			</div>
 		</section>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 import "./Header.css";
 
@@ -57,17 +58,21 @@ const Header = () => {
 									<div className="navbar-header navbar-header-custom">
 										{/* start logo */}
 										<a href="/" className="navbar-brand">
-											<img
+											<Image
 												ref={logoDefaultRef}
 												className="logo-default"
 												src="/logo.png"
-												alt="logo"
+												alt="Handyman Pro Logo"
+												width={150}
+												height={50}
 											/>
-											<img
+											<Image
 												ref={logoScrolledRef}
 												className="logo-scrolled"
 												src="/logo-dark.png"
-												alt="logo"
+												alt="Handyman Pro Logo"
+												width={150}
+												height={50}
 												style={{ display: "none" }}
 											/>
 										</a>

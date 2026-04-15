@@ -222,8 +222,8 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 										</div>
 									))}
 								</div>
-
-								<h3 className="mb-4">Why Choose Us</h3>
+									{/* Why Choose Us */}
+								{/* <h3 className="mb-4">Why Choose Us</h3>
 								<p className="mb-5">
 									Choosing our {detail.title.toLowerCase()} services in Edmonton
 									means working with a team that understands local conditions and
@@ -248,8 +248,8 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 											</div>
 										</div>
 									))}
-								</div>
-
+								</div> */}
+								{/* Areas we serve  */}
 								<div className="row mb-5">
 									<div className="col-md-6 mb-3 mb-md-0">
 										<div className="border rounded-3 p-4 h-100">

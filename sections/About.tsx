@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const About = () => {
 	return (
 		<section className="about-style-02">
@@ -6,10 +8,22 @@ const About = () => {
 					<div className="col-lg-6 mt-1-9 mb-lg-0">
 						<div className="position-relative pb-sm-22 me-xxl-1-9">
 							<div className="about-img1 z-index-2 position-relative text-center text-sm-start">
-								<img src="/about_01.jpg" alt="..." />
+								<Image
+									src="/about_01.jpg"
+									alt="Professional handyman at work"
+									width={400}
+									height={500}
+									className="img-fluid"
+								/>
 							</div>
 							<div className="about-img2 position-absolute right bottom-0 z-index-3 d-none d-sm-block">
-								<img src="/about_02.jpg" alt="..." />
+								<Image
+									src="/about_02.jpg"
+									alt="Completed handyman project"
+									width={200}
+									height={250}
+									className="img-fluid"
+								/>
 							</div>
 							<div className="position-absolute right top bg-secondary p-4 z-index-9 d-none d-sm-block">
 								<h3 className="display-7 mb-1 text-white">
@@ -33,26 +47,29 @@ const About = () => {
 							<div className="heading-style01 mb-1-9 mb-xl-2-0">
 								<span className="small-text">About Us</span>
 								<h2 className="display-5">
-									Safe, Reliable &amp; Epress Moving Solutions!
+									Safe, Reliable &amp; Professional Handyman Services!
 								</h2>
 							</div>
 							<p className="mb-xl-4">
-								We endeavor to comprehend what they're going through, what they
-								need what their price tags are, and what means quite a bit to
-								them and their clients. We interface with our clients.
+								We understand that your home is your most valuable asset. Our
+								team of skilled professionals provides comprehensive handyman
+								services throughout Edmonton, Sherwood Park, St. Albert, Leduc,
+								and Stony Plain. From minor repairs to major renovations, we
+								deliver quality workmanship with attention to detail and
+								customer satisfaction.
 							</p>
 							<ul className="list-unstyled border-bottom mb-1-9 pb-1-9">
 								<li className="mb-3">
 									<i className="bi bi-circle-fill text-secondary me-3" />
-									Creative Work Insight
+									Licensed & Insured Professionals
 								</li>
 								<li className="mb-3">
 									<i className="bi bi-circle-fill text-secondary me-3" />
-									Always Work With Energetic Team
+									Serving All Edmonton Area Communities
 								</li>
 								<li>
 									<i className="bi bi-circle-fill text-secondary me-3" />
-									We are Award Winning Company
+									100% Satisfaction Guarantee
 								</li>
 							</ul>
 
