@@ -16,7 +16,7 @@ const AboutUsSection = () => {
 							</div>
 							<p className="mb-5">
 								Professional handyman services serving Edmonton, Sherwood Park,
-								St. Albert, Leduc, and Stony Plain. With over 10 years of
+								St. Albert, Leduc, and Stony Plain. With over 25 years of
 								experience, we provide reliable home repair solutions with
 								quality craftsmanship and exceptional customer service. From
 								minor repairs to major renovations, we're committed to keeping
@@ -39,7 +39,6 @@ const AboutUsSection = () => {
 								className=" rounded-4"
 								style={{ objectFit: "cover", objectPosition: "center top" }}
 							/>
-							
 						</div>
 					</div>
 				</div>
