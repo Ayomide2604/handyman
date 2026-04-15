@@ -29,7 +29,7 @@ const MeetOwnerSection = () => {
                 /> */}
 							</div>
 							<div className="agent-detail-des">
-								<h3 className="text-primary h4">George Soyemi</h3>
+								<h3 className="text-primary h4">George</h3>
 								<div className="border-bottom mb-3 pb-3">
 									<span className="d-inline-block text-uppercase">
 										Founder & CEO
