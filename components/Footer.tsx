@@ -28,14 +28,19 @@ const Footer = () => {
 								Follow Us
 							</h5>
 							<div className="d-flex gap-3">
-								<a href="#!" className="text-white fs-5 text-secondary-hover">
+								<a
+									href="https://www.facebook.com/profile.php?id=61570681256562&mibextid=wwXIfr&rdid=x1UZBWjNT0drjsMA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLxrkixK2%2F%3Fmibextid%3DwwXIfr%23rdid%3Dx1UZBWjNT0drjsMA"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-white fs-5 text-secondary-hover"
+								>
 									<i className="bi bi-facebook"></i>
 								</a>
 								<a href="#!" className="text-white fs-5 text-secondary-hover">
 									<i className="bi bi-instagram"></i>
 								</a>
 								<a
-									href="mailto:info@handymanpro.ca"
+									href="mailto:homerepair@handymanplusservices.com"
 									className="text-white fs-5 text-secondary-hover"
 								>
 									<i className="bi bi-envelope"></i>
@@ -103,10 +108,10 @@ const Footer = () => {
 								<i className="bi bi-envelope me-3 mt-1 text-secondary"></i>
 								<div>
 									<a
-										href="mailto:info@handymanpro.ca"
+										href="mailto:homerepair@handymanplusservices.com"
 										className="text-white text-secondary-hover text-decoration-none"
 									>
-										info@handymanpro.ca
+										homerepair@handymanplusservices.com
 									</a>
 								</div>
 							</li>
@@ -146,7 +151,9 @@ const Footer = () => {
 							<p className="mb-0 text-white">
 								Designed by{" "}
 								<a
-									href="#!"
+									href="https://webstridestudios.ca"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="text-secondary text-white-hover text-decoration-none"
 								>
 									Webstride Studios

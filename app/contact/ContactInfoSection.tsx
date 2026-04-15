@@ -44,7 +44,9 @@ const ContactInfoSection = () => {
 						</h4>
 						<ul className="list-unstyled display-md-29 display-xl-28 mb-0">
 							<li>
-								<a href="mailto:info@handymanpro.ca">info@handymanpro.ca</a>
+								<a href="mailto:homerepair@handymanplusservices.com">
+									homerepair@handymanplusservices.com
+								</a>
 							</li>
 						</ul>
 					</div>
