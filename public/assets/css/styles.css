@@ -1215,7 +1215,7 @@ a:active {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	min-height: 110px;
+	min-height: 150px;
 	z-index: 1;
 }
 .card-style05 .title .blue-bg {
@@ -1230,13 +1230,13 @@ a:active {
 .card-style05 .title .card-text {
 	position: absolute;
 	left: 0;
-	bottom: 60px;
+	bottom: 20px;
 	width: 270px;
 	background: #ffffff;
 	padding-top: 27px;
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 24px;
+	padding-bottom: 20px;
 	overflow: hidden;
 	transition: all 0.5s ease-in-out 0.1s;
 	z-index: 2;
@@ -1265,11 +1265,11 @@ a:active {
 }
 .card-style05:hover .title .card-text {
 	padding-top: 37px;
-	padding-bottom: 43px;
+	padding-bottom: 50px;
 }
 .card-style05:hover .title .text {
 	opacity: 1;
-	height: 90px;
+	height: 180px;
 	padding-top: 9px;
 }
 .card-style06 .card-body .icon-holder .box {

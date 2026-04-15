@@ -68,9 +68,7 @@ const Services = () => {
 									<div className="title">
 										<div className="blue-bg" />
 										<div className="card-text">
-											<h3 className="h5 mb-0">
-												<a href={`/services/${service.id}`}>{service.title}</a>
-											</h3>
+											<h3 className="h5 mb-0">{service.title}</h3>
 											<div className="text">
 												<p className="mb-0">{service.description}</p>
 											</div>
