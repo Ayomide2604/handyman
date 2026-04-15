@@ -1,34 +1,206 @@
 /* Logo styling for consistent sizing and responsiveness */
 .logo-default,
 .logo-scrolled {
-  width: 150px !important;
-  height: auto !important;
-  max-width: 100% !important;
-  transition: all 0.3s ease;
+	width: 150px !important;
+	height: auto !important;
+	max-width: 100% !important;
+	transition: all 0.3s ease;
 }
 
 /* Responsive logo sizes */
 @media (max-width: 768px) {
-  .logo-default,
-  .logo-scrolled {
-    width: 120px !important;
-  }
+	.logo-default,
+	.logo-scrolled {
+		width: 120px !important;
+	}
 }
 
 @media (max-width: 480px) {
-  .logo-default,
-  .logo-scrolled {
-    width: 100px !important;
-  }
+	.logo-default,
+	.logo-scrolled {
+		width: 100px !important;
+	}
 }
 
 /* Ensure navbar brand doesn't add extra padding */
 .navbar-brand {
-  padding: 0;
+	padding: 0;
 }
 
 /* Logo container styling */
 .navbar-header-custom {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+/* Ensure navbar has position relative for absolute positioning */
+.navbar {
+	position: relative;
+}
+
+/* Custom mobile menu styling - no Bootstrap conflicts */
+.custom-navbar-toggler {
+	border: none;
+	padding: 8px 12px;
+	background: transparent !important;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Only show on mobile - hide on tablets and desktop */
+@media (min-width: 992px) {
+	.custom-navbar-toggler {
+		display: none !important;
+	}
+}
+
+.custom-navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+/* Custom hamburger menu */
+.hamburger-menu {
+	width: 24px;
+	height: 18px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hamburger-menu span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #063b8b;
+	transition: all 0.3s ease;
+	transform-origin: center;
+}
+
+/* Active state - hamburger to X animation */
+.custom-navbar-toggler[aria-expanded="true"] .hamburger-menu span:nth-child(1) {
+	transform: rotate(45deg) translate(6px, 6px);
+}
+
+.custom-navbar-toggler[aria-expanded="true"] .hamburger-menu span:nth-child(2) {
+	opacity: 0;
+	transform: translateX(20px);
+}
+
+.custom-navbar-toggler[aria-expanded="true"] .hamburger-menu span:nth-child(3) {
+	transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Hide Bootstrap's default navbar-toggler completely */
+.navbar-toggler {
+	display: none !important;
+}
+
+.navbar-toggler-icon {
+	display: none !important;
+}
+
+/* Mobile menu navigation */
+.navbar-nav {
+	display: none;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.navbar-nav.show {
+	display: flex;
+}
+
+@media (max-width: 991.98px) {
+	.navbar-nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: white;
+		border-top: 1px solid #dee2e6;
+		padding: 1rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+	}
+
+	.navbar-nav li {
+		margin-bottom: 0.5rem;
+	}
+
+	.navbar-nav li a {
+		padding: 0.5rem 1rem;
+		display: block;
+		color: #063b8b;
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.navbar-nav li a:hover {
+		color: #ecba16;
+	}
+
+	.navbar-nav .butn {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-nav {
+		display: flex !important;
+		flex-direction: row;
+		position: static;
+		background: transparent;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	.navbar-nav li {
+		margin-bottom: 0;
+		margin-left: 1rem;
+	}
+
+	.navbar-nav li a {
+		padding: 0.5rem 0;
+	}
+}
+
+/* Sticky header mobile fixes */
+@media (max-width: 991.98px) {
+	header {
+		position: relative !important;
+		z-index: 1030;
+	}
+
+	header.fixedHeader,
+	header.scrollHeader {
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1030;
+	}
+
+	header.scrollHeader {
+		background: white;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	/* Ensure header is visible on mobile */
+	.header-style1 {
+		display: block !important;
+		visibility: visible !important;
+	}
 }

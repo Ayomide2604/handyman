@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 import "./Header.css";
@@ -8,6 +8,7 @@ const Header = () => {
 	const logoDefaultRef = useRef<HTMLImageElement>(null);
 	const logoScrolledRef = useRef<HTMLImageElement>(null);
 	const headerRef = useRef<HTMLElement>(null);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -47,6 +48,11 @@ const Header = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	const toggleMobileMenu = () => {
+		setIsMobileMenuOpen(!isMobileMenuOpen);
+	};
+
 	return (
 		<header ref={headerRef} className="header-style1 menu_area-light mt-n2">
 			<div className="navbar-default border-bottom border-color-light-white">
@@ -78,12 +84,23 @@ const Header = () => {
 										</a>
 										{/* end logo */}
 									</div>
-									<div className="navbar-toggler bg-secondary" />
+									<button
+										className="custom-navbar-toggler"
+										type="button"
+										onClick={toggleMobileMenu}
+										aria-expanded={isMobileMenuOpen}
+										aria-label="Toggle navigation"
+									>
+										<div className="hamburger-menu">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</button>
 									{/* start menu area */}
 									<ul
-										className="navbar-nav ms-auto"
+										className={`navbar-nav ms-auto ${isMobileMenuOpen ? "show" : ""}`}
 										id="nav"
-										style={{ display: "none" }}
 									>
 										<li>
 											<a href="/">Home</a>
@@ -96,6 +113,11 @@ const Header = () => {
 										</li>
 										<li>
 											<a href="/contact">Contact Us</a>
+										</li>
+										<li className="d-lg-none">
+											<a href="/contact" className="butn secondary md">
+												<span className="text-white">Get Free Quote</span>
+											</a>
 										</li>
 									</ul>
 									{/* end menu area */}
