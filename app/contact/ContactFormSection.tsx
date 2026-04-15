@@ -7,7 +7,6 @@ const ContactFormSection = () => {
 		email: "",
 		subject: "",
 		message: "",
-		captcha: "",
 	});
 
 	const handleChange = (
@@ -30,7 +29,6 @@ const ContactFormSection = () => {
 			email: "",
 			subject: "",
 			message: "",
-			captcha: "",
 		});
 	};
 
@@ -128,29 +126,6 @@ const ContactFormSection = () => {
 														onChange={handleChange}
 														required
 													></textarea>
-												</div>
-											</div>
-										</div>
-
-										{/* Simple Captcha */}
-										<div className="col-md-12">
-											<div className="quform-element mb-3">
-												<div className="form-group">
-													<div className="quform-input">
-														<input
-															className="form-control"
-															id="type_the_word"
-															type="text"
-															name="captcha"
-															placeholder="Type 'HANDYMAN' to verify"
-															value={formData.captcha}
-															onChange={handleChange}
-															required
-														/>
-													</div>
-												</div>
-												<div className="form-group">
-													<small className="text-muted">Type: HANDYMAN</small>
 												</div>
 											</div>
 										</div>

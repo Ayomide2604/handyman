@@ -3,49 +3,49 @@
     {
       "id": "plumbing",
       "title": "Plumbing",
-      "description": "Professional installations and repairs for all your plumbing needs",
+      "description": "Complete plumbing solutions including faucet repairs, pipe installations, leak detection, and bathroom fixture replacements for Edmonton homeowners",
       "image": "/plumbing.jpg"
     },
     {
       "id": "painting",
       "title": "Painting",
-      "description": "Expert painting, repainting and decorative services for your home",
+      "description": "Interior and exterior painting services with premium quality finishes, surface preparation, and color consultation to transform your home",
       "image": "/painting.jpg"
     },
     {
       "id": "carpentry",
       "title": "Carpentry",
-      "description": "Skilled carpentry installations and repairs for all woodwork needs",
+      "description": "Custom carpentry services including trim work, cabinet installation, shelving, and wood repairs for perfect home craftsmanship",
       "image": "/carpentry.jpg"
     },
     {
       "id": "fences",
       "title": "Fences",
-      "description": "Professional fence installations and repairs for security and privacy",
+      "description": "Professional fence installation and repair services including wood, vinyl, and chain-link fences for property security and curb appeal",
       "image": "/fencing.jpg"
     },
     {
       "id": "decks",
       "title": "Decks",
-      "description": "Quality deck installations and repairs for outdoor living spaces",
+      "description": "Custom deck design, installation, and repair services creating beautiful outdoor living spaces perfect for Edmonton's climate",
       "image": "/deck.jpg"
     },
     {
       "id": "drywall",
       "title": "Drywall",
-      "description": "Expert drywall installations and repairs for perfect walls",
+      "description": "Professional drywall installation, patching, texturing, and finishing services for smooth, flawless walls throughout your home",
       "image": "/drywall.jpg"
     },
     {
       "id": "flooring",
       "title": "Flooring",
-      "description": "Ceramic tiles, engineered woods and hardwood - repairs and installations",
+      "description": "Complete flooring solutions including tile, laminate, hardwood installation, and repairs to enhance your home's beauty and value",
       "image": "/flooring.jpg"
     },
     {
       "id": "electrical",
       "title": "Electrical",
-      "description": "Professional electrical repairs and installations for your safety",
+      "description": "Licensed electrical services including outlet installation, lighting upgrades, panel maintenance, and safety inspections for your peace of mind",
       "image": "/electrical.jpg"
     }
   ],
@@ -53,25 +53,25 @@
     {
       "id": "elderly-speciality",
       "title": "Elderly Speciality",
-      "description": "Specialized household remodeling and renovations including wheelchair passageways",
+      "description": "Accessibility modifications and senior-friendly home improvements including grab bars, ramps, and wheelchair-accessible renovations",
       "image": "/plumbing.jpg"
     },
     {
       "id": "emergency-services",
       "title": "Emergency Services",
-      "description": "Quick installations and repairs for urgent household needs",
+      "description": "24/7 emergency handyman services for urgent repairs, burst pipes, electrical issues, and critical home maintenance needs",
       "image": "/plumbing.jpg"
     },
     {
       "id": "realtor-services",
       "title": "Realtor Services",
-      "description": "Urgent fixes and repairs for quick home sales and property preparation",
+      "description": "Pre-sale home preparation services including repairs, touch-ups, and improvements to maximize property value and accelerate sales",
       "image": "/plumbing.jpg"
     },
     {
       "id": "general-repairs",
       "title": "General Repairs",
-      "description": "Comprehensive handyman services for all your household repair needs",
+      "description": "Comprehensive home maintenance and repair services covering everything from minor fixes to major renovations across Edmonton area",
       "image": "/plumbing.jpg"
     }
   ]

@@ -34,7 +34,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 		<>
 			<PageBanner
 				title={detail.title}
-				backgroundImage="https://fixityhtml.websitelayout.net/img/banner/page-title-01.jpg"
+				backgroundImage="/hero.jpeg"
 				breadcrumbs={[
 					{ label: "Home", href: "/" },
 					{ label: "Services", href: "/services" },
@@ -93,30 +93,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 											Get a Free Quote
 										</a>
 									</div>
-									<div
-										className="bg-img cover-background p-1-6 p-sm-1-9 p-xxl-5 dark-overlay"
-										style={{
-											backgroundImage:
-												"url('https://fixityhtml.websitelayout.net/img/services/service-details-05.jpg')",
-										}}
-									>
-										<div className="position-relative z-index-9">
-											<h3 className="display-4 display-xxl-3 font-weight-800 text-secondary">
-												24/7
-											</h3>
-											<p className="text-white lead lh-base">
-												Emergency Services Available
-											</p>
-											<h4 className="text-white mb-0 lh-base">
-												<a
-													href="tel:+17808026830"
-													className="text-secondary display-25 d-block font-weight-500"
-												>
-													Call Now: (780) 802-6830
-												</a>
-											</h4>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -134,9 +111,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 								<div className="row align-items-xl-center mb-5 mt-n5">
 									<div className="col-md-6 mt-5">
 										<div className="pe-xl-5">
-											<h4 className="mb-4 h3">
-												Common {detail.title} Issues
-											</h4>
+											<h4 className="mb-4 h3">Common {detail.title} Issues</h4>
 											<p className="mb-4">
 												Edmonton homeowners often face these{" "}
 												{detail.title.toLowerCase()} challenges due to our
@@ -222,7 +197,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 										</div>
 									))}
 								</div>
-									{/* Why Choose Us */}
+								{/* Why Choose Us */}
 								{/* <h3 className="mb-4">Why Choose Us</h3>
 								<p className="mb-5">
 									Choosing our {detail.title.toLowerCase()} services in Edmonton
@@ -258,7 +233,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
 										</div>
 									</div>
 									<div className="col-md-6">
-										<div className="border rounded-3 p-4 h-100 bg-primary bg-opacity-10">
+										<div className="border rounded-3 p-4 h-100  bg-opacity-10">
 											<h4 className="h5 mb-3">Emergency &amp; Urgent Needs</h4>
 											<p className="mb-0">{detail.emergency}</p>
 										</div>

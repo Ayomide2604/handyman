@@ -1,18 +1,16 @@
-import React from 'react';
-import PageTitleSection from './PageTitleSection';
-import ContactInfoSection from './ContactInfoSection';
-import ContactFormSection from './ContactFormSection';
-import MapSection from './MapSection';
+import React from "react";
+import PageTitleSection from "./PageTitleSection";
+import ContactInfoSection from "./ContactInfoSection";
+import ContactFormSection from "./ContactFormSection";
 
 const ContactPage = () => {
-  return (
-    <>
-      <PageTitleSection />
-      <ContactInfoSection />
-      <ContactFormSection />
-      <MapSection />
-    </>
-  );
+	return (
+		<>
+			<PageTitleSection />
+			<ContactInfoSection />
+			<ContactFormSection />
+		</>
+	);
 };
 
 export default ContactPage;

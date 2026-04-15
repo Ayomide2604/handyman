@@ -5,7 +5,7 @@ const PageTitleSection = () => {
 	return (
 		<PageBanner
 			title="Contact Us"
-			backgroundImage="/img/banner/page-title-01.jpg"
+			backgroundImage="/hero.jpeg"
 			breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
 		/>
 	);

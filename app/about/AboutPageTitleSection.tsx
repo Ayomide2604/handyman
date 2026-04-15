@@ -4,7 +4,7 @@ const AboutPageTitleSection = () => {
 	return (
 		<PageBanner
 			title="About Us"
-			backgroundImage="https://fixityhtml.websitelayout.net/img/banner/page-title-01.jpg"
+			backgroundImage="/hero.jpeg"
 			breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
 		/>
 	);

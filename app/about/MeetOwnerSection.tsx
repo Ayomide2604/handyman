@@ -19,11 +19,11 @@ const MeetOwnerSection = () => {
           <div className="col-lg-4 mt-2-9">
             <div>
               <div className="position-relative text-center mb-lg-0 mb-5">
-                <img
+                {/* <img
                   src="https://fixityhtml.websitelayout.net/img/team/team-01.jpg"
                   alt="Owner"
                   style={{ width: "100%", borderRadius: "8px" }}
-                />
+                /> */}
               </div>
               <div className="agent-detail-des">
                 <h3 className="text-primary h4">George Soyemi</h3>
@@ -33,8 +33,8 @@ const MeetOwnerSection = () => {
                   </span>
                 </div>
                 <p>
-                  With over 15 years of experience in home improvement and
-                  handyman services, Aiden founded our company with a simple
+                  With over 10 years of experience in home improvement and
+                  handyman services, George founded our company with a simple
                   mission: to provide homeowners with reliable, professional,
                   and affordable solutions for all their home maintenance
                   needs.

@@ -9,15 +9,16 @@ const Footer = () => {
 					<div className="col-lg-4 mb-4 mb-lg-0">
 						<div className="footer-brand mb-4">
 							<h3 className="h4 text-white mb-3">Handyman Pro</h3>
-							<p className="text-muted">
+							<p className="text-white">
 								Professional handyman services in Edmonton and surrounding
 								areas. Quality workmanship, reliable service, and fair pricing
 								for all your home repair needs.
 							</p>
 							<div className="mt-3">
-								<p className="text-muted small mb-1">
-									<strong>Service Areas:</strong> Edmonton, Sherwood Park, St.
-									Albert, Leduc, Stony Plain
+								<p className="text-white small mb-1">
+									<strong>Service Areas:</strong> Serving Edmonton community and
+									its surrounding cities but not limited to St. Albert, Leduc,
+									Sherwood Park and Stony Plain
 								</p>
 							</div>
 						</div>
@@ -122,11 +123,9 @@ const Footer = () => {
 							<li className="mb-3 d-flex align-items-start">
 								<i className="bi bi-geo-alt me-3 mt-1 text-secondary"></i>
 								<div className="text-white">
-									Serving Edmonton & Area
+									Serving Edmonton community and its surrounding cities but not
+									limited to St. Albert, Leduc, Sherwood Park and Stony Plain
 									<br />
-									Edmonton, Alberta T5X 0A1
-									<br />
-									Canada
 								</div>
 							</li>
 						</ul>
@@ -137,12 +136,12 @@ const Footer = () => {
 				<div className="border-top border-secondary mt-4 pt-4">
 					<div className="row align-items-center">
 						<div className="col-md-6">
-							<p className="mb-0 text-muted">
+							<p className="mb-0 text-white">
 								© {new Date().getFullYear()} Handyman Pro. All rights reserved.
 							</p>
 						</div>
 						<div className="col-md-6 text-md-end">
-							<p className="mb-0 text-muted">
+							<p className="mb-0 text-white">
 								Designed by{" "}
 								<a
 									href="#!"

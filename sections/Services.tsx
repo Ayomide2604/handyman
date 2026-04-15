@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
@@ -17,9 +17,15 @@ const Services = () => {
 				</div>
 
 				<Swiper
-					modules={[Pagination]}
+					modules={[Pagination, Autoplay]}
 					spaceBetween={30}
 					slidesPerView={1}
+					autoplay={{
+						delay: 500,
+						disableOnInteraction: false,
+						stopOnLastSlide: false,
+					}}
+					loop={true}
 					breakpoints={{
 						640: {
 							slidesPerView: 2,
@@ -53,6 +59,8 @@ const Services = () => {
 											className="img-fluid"
 											style={{
 												borderRadius: "8px",
+												objectFit: "cover",
+												objectPosition: "center",
 											}}
 										/>
 									</div>
