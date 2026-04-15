@@ -74,15 +74,7 @@ const Services = () => {
 												<p className="mb-0">{service.description}</p>
 											</div>
 										</div>
-										<div className="card-butn">
-											<a
-												href={`/services/${service.id}`}
-												className="text-white"
-											>
-												More Details
-												<span className="align-middle ms-2">»</span>
-											</a>
-										</div>
+										{/* More Details removed */}
 									</div>
 								</div>
 							</div>
