@@ -21,7 +21,7 @@ const Services = () => {
 					spaceBetween={30}
 					slidesPerView={1}
 					autoplay={{
-						delay: 500,
+						delay: 1000,
 						disableOnInteraction: false,
 						stopOnLastSlide: false,
 					}}

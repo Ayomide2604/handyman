@@ -33,6 +33,9 @@ const ContactInfoSection = () => {
 								but not limited to St. Albert, Leduc, Sherwood Park and Stony
 								Plain
 							</li>
+							<li>
+								<strong>Working Hours:</strong> Monday - Saturday, 7am - 10pm
+							</li>
 						</ul>
 					</div>
 					<div className="col-sm-6 col-lg-4 mt-2-2 text-sm-end text-lg-start">

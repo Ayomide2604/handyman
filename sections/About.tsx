@@ -27,12 +27,12 @@ const About = () => {
 							</div>
 							<div className="position-absolute right top bg-secondary p-4 z-index-9 d-none d-sm-block">
 								<h3 className="display-7 mb-1 text-white">
-									<span className="countup">10</span>
+									<span className="countup">25</span>
 									<span>+</span>
 								</h3>
 								<p className="mb-0 text-white">
 									Years of <br />
-									Experience
+									Service Excellence
 								</p>
 							</div>
 							{/* <img
@@ -51,12 +51,14 @@ const About = () => {
 								</h2>
 							</div>
 							<p className="mb-xl-4">
-								We understand that your home is your most valuable asset. Our
-								team of skilled professionals provides comprehensive handyman
-								services throughout Edmonton, Sherwood Park, St. Albert, Leduc,
-								and Stony Plain. From minor repairs to major renovations, we
-								deliver quality workmanship with attention to detail and
-								customer satisfaction.
+								With 25 years of service excellence, Handyman Pro Plus
+								understands that your home is your most valuable asset. Our team
+								of skilled professionals provides comprehensive handyman
+								services throughout Edmonton community and its surrounding
+								cities but not limited to St. Albert, Leduc, Sherwood Park and
+								Stony Plain. From minor repairs to major renovations, we deliver
+								quality workmanship with attention to detail and customer
+								satisfaction.
 							</p>
 							<ul className="list-unstyled border-bottom mb-1-9 pb-1-9">
 								<li className="mb-3">

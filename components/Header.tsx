@@ -62,7 +62,7 @@ const Header = () => {
 												ref={logoDefaultRef}
 												className="logo-default"
 												src="/logo.png"
-												alt="Handyman Pro Logo"
+												alt="Handyman Pro Plus Logo"
 												width={150}
 												height={50}
 											/>
@@ -70,7 +70,7 @@ const Header = () => {
 												ref={logoScrolledRef}
 												className="logo-scrolled"
 												src="/logo-dark.png"
-												alt="Handyman Pro Logo"
+												alt="Handyman Pro Plus Logo"
 												width={150}
 												height={50}
 												style={{ display: "none" }}

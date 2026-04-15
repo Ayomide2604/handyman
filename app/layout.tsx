@@ -6,15 +6,15 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title:
-		"Professional Handyman Services in Edmonton | Quality Home Repairs & Maintenance",
+		"Professional Handyman Services in Edmonton | 25 Years of Quality Home Repairs & Maintenance",
 	description:
 		"Expert handyman services in Edmonton, Sherwood Park, St. Albert, Leduc & Stony Plain. Professional plumbing, electrical, carpentry, painting, fencing, decks, drywall & flooring repairs.",
 	keywords:
 		"handyman Edmonton, home repairs Edmonton, plumbing services Edmonton, electrical repairs Edmonton, carpentry Edmonton, painting Edmonton, fencing Edmonton, deck repair Edmonton, drywall repair Edmonton, flooring installation Edmonton, handyman Sherwood Park, handyman St. Albert, handyman Leduc, handyman Stony Plain, professional handyman services, residential repairs, home maintenance Edmonton",
-	authors: [{ name: "Handyman Pro" }],
+	authors: [{ name: "Handyman Pro Plus" }],
 	openGraph: {
 		title:
-			"Professional Handyman Services in Edmonton | Quality Home Repairs & Maintenance",
+			"Professional Handyman Services in Edmonton | 25 Years of Quality Home Repairs & Maintenance",
 		description:
 			"Expert handyman services in Edmonton, Sherwood Park, St. Albert, Leduc & Stony Plain. Professional plumbing, electrical, carpentry, painting, fencing, decks, drywall & flooring repairs.",
 		type: "website",

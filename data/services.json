@@ -1,65 +1,65 @@
 {
-  "mainServices": [
+	"mainServices": [
+		{
+			"id": "plumbing",
+			"title": "Plumbing Services",
+			"description": "Complete plumbing installation and repair services including faucet repairs, pipe installations, leak detection, bathroom fixture replacements, emergency plumbing solutions, and complete bathroom plumbing systems",
+			"image": "/plumbing.jpg"
+		},
+		{
+			"id": "painting",
+			"title": "Painting & Repair",
+			"description": "Professional interior and exterior painting services with premium quality finishes, surface preparation, drywall repair, texturing, finishing, and complete color consultation to transform your home",
+			"image": "/painting.jpg"
+		},
+		{
+			"id": "carpentry",
+			"title": "Doors & Carpentry",
+			"description": "Expert carpentry services including door hanging, leveling, and repair, closet door repair, locks & hinges installation, trim work, cabinet installation, custom wood repairs, furniture assembly, and furniture repair",
+			"image": "/carpentry.jpg"
+		},
+		{
+			"id": "flooring",
+			"title": "Flooring Installation",
+			"description": "Complete flooring solutions including tiles, engineered wood, hardwood floor installation, flooring repair, and professional TV mounting services to enhance your home's beauty and value",
+			"image": "/flooring.jpg"
+		},
+		{
+			"id": "electrical",
+			"title": "Electrical & Appliances",
+			"description": "Licensed electrical services including appliance installation and repair, outlet installation, lighting upgrades, panel maintenance, safety inspections, and complete home restoration electrical work for your peace of mind",
+			"image": "/electrical.jpg"
+		},
+		{
+			"id": "drywall",
+			"title": "Drywall & Repair",
+			"description": "Professional drywall installation, patching, texturing, finishing, and masonry work integration for smooth, flawless walls throughout your home",
+			"image": "/drywall.jpg"
+		},
+		{
+			"id": "kitchen-bathroom",
+			"title": "Kitchen & Bathroom",
+			"description": "Complete kitchen and bathroom renovation services including fixture installation, repairs, and remodeling to create functional and beautiful spaces",
+			"image": "/deck.jpg"
+		},
+		{
+			"id": "windows-doors",
+			"title": "Windows & Doors",
+			"description": "Professional window and door installation services including energy-efficient upgrades, repairs, and replacements to improve your home's efficiency and security",
+			"image": "/fencing.jpg"
+		}
+	],
+	"specialtyServices": [
     {
-      "id": "plumbing",
-      "title": "Plumbing",
-      "description": "Complete plumbing solutions including faucet repairs, pipe installations, leak detection, and bathroom fixture replacements for Edmonton homeowners",
+      "id": "emergency-services",
+      "title": "24/7 Emergency Services",
+      "description": "Round-the-clock emergency handyman services for urgent repairs, burst pipes, electrical issues, and critical home maintenance needs - Call 780-802-6830",
       "image": "/plumbing.jpg"
     },
-    {
-      "id": "painting",
-      "title": "Painting",
-      "description": "Interior and exterior painting services with premium quality finishes, surface preparation, and color consultation to transform your home",
-      "image": "/painting.jpg"
-    },
-    {
-      "id": "carpentry",
-      "title": "Carpentry",
-      "description": "Custom carpentry services including trim work, cabinet installation, shelving, and wood repairs for perfect home craftsmanship",
-      "image": "/carpentry.jpg"
-    },
-    {
-      "id": "fences",
-      "title": "Fences",
-      "description": "Professional fence installation and repair services including wood, vinyl, and chain-link fences for property security and curb appeal",
-      "image": "/fencing.jpg"
-    },
-    {
-      "id": "decks",
-      "title": "Decks",
-      "description": "Custom deck design, installation, and repair services creating beautiful outdoor living spaces perfect for Edmonton's climate",
-      "image": "/deck.jpg"
-    },
-    {
-      "id": "drywall",
-      "title": "Drywall",
-      "description": "Professional drywall installation, patching, texturing, and finishing services for smooth, flawless walls throughout your home",
-      "image": "/drywall.jpg"
-    },
-    {
-      "id": "flooring",
-      "title": "Flooring",
-      "description": "Complete flooring solutions including tile, laminate, hardwood installation, and repairs to enhance your home's beauty and value",
-      "image": "/flooring.jpg"
-    },
-    {
-      "id": "electrical",
-      "title": "Electrical",
-      "description": "Licensed electrical services including outlet installation, lighting upgrades, panel maintenance, and safety inspections for your peace of mind",
-      "image": "/electrical.jpg"
-    }
-  ],
-  "specialtyServices": [
     {
       "id": "elderly-speciality",
       "title": "Elderly Speciality",
       "description": "Accessibility modifications and senior-friendly home improvements including grab bars, ramps, and wheelchair-accessible renovations",
-      "image": "/plumbing.jpg"
-    },
-    {
-      "id": "emergency-services",
-      "title": "Emergency Services",
-      "description": "24/7 emergency handyman services for urgent repairs, burst pipes, electrical issues, and critical home maintenance needs",
       "image": "/plumbing.jpg"
     },
     {
@@ -71,7 +71,7 @@
     {
       "id": "general-repairs",
       "title": "General Repairs",
-      "description": "Comprehensive home maintenance and repair services covering everything from minor fixes to major renovations across Edmonton area",
+      "description": "Comprehensive home maintenance and repair services covering everything from minor fixes to major renovations across Edmonton area with free estimates and guaranteed work",
       "image": "/plumbing.jpg"
     }
   ]

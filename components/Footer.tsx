@@ -8,11 +8,12 @@ const Footer = () => {
 					{/* Company Info */}
 					<div className="col-lg-4 mb-4 mb-lg-0">
 						<div className="footer-brand mb-4">
-							<h3 className="h4 text-white mb-3">Handyman Pro</h3>
+							<h3 className="h4 text-white mb-3">Handyman Pro Plus</h3>
 							<p className="text-white">
-								Professional handyman services in Edmonton and surrounding
-								areas. Quality workmanship, reliable service, and fair pricing
-								for all your home repair needs.
+								Professional handyman services with 25 years of service
+								excellence in Edmonton and surrounding areas. Quality
+								workmanship, reliable service, and fair pricing for all your
+								home repair needs.
 							</p>
 							<div className="mt-3">
 								<p className="text-white small mb-1">
@@ -137,7 +138,8 @@ const Footer = () => {
 					<div className="row align-items-center">
 						<div className="col-md-6">
 							<p className="mb-0 text-white">
-								© {new Date().getFullYear()} Handyman Pro. All rights reserved.
+								© {new Date().getFullYear()} Handyman Pro Plus. All rights
+								reserved.
 							</p>
 						</div>
 						<div className="col-md-6 text-md-end">

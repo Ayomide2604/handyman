@@ -29,8 +29,9 @@ const Hero = () => {
 								<span className="text-secondary">You Can Trust.</span>
 							</h1>
 							<p className="text-white mb-4 lead">
-								Serving Edmonton community and its surrounding cities but not
-								limited to St. Albert, Leduc, Sherwood Park and Stony Plain
+								25 Years of Service Excellence - Serving Edmonton community and
+								its surrounding cities but not limited to St. Albert, Leduc,
+								Sherwood Park and Stony Plain
 							</p>
 							<a href="#services" className="butn me-2 my-1 my-sm-0">
 								<span>View Services</span>
