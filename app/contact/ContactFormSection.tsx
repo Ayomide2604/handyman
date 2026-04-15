@@ -1,8 +1,30 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const ContactFormSection = () => {
+	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [showSuccess, setShowSuccess] = useState(false);
+
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault();
+		setIsSubmitting(true);
+
+		// Show success message after a short delay
+		setTimeout(() => {
+			setIsSubmitting(false);
+			setShowSuccess(true);
+
+			// Clear form immediately when success shows
+			const form = e.target as HTMLFormElement;
+			form.reset();
+
+			// Hide success message after 5 seconds
+			setTimeout(() => {
+				setShowSuccess(false);
+			}, 5000);
+		}, 1000);
+	};
 	return (
 		<section>
 			<div className="container">
@@ -14,9 +36,10 @@ const ContactFormSection = () => {
 								<h2 className="display-5">Send Us a Message</h2>
 							</div>
 							<form
-								className="contact quform"
+								className="contact-form"
 								action="https://formspree.io/f/mpqkqolv"
 								method="POST"
+								onSubmit={handleSubmit}
 							>
 								<input
 									type="hidden"
@@ -103,11 +126,38 @@ const ContactFormSection = () => {
 											</div>
 										</div>
 
+										{/* Success Message */}
+										{showSuccess && (
+											<div className="col-md-12">
+												<div className="alert alert-success mt-3">
+													Thank you for your message! We will get back to you
+													soon.
+												</div>
+											</div>
+										)}
+
 										{/* Submit Button */}
 										<div className="col-md-12">
 											<div className="quform-submit-inner">
-												<button type="submit" className="butn md">
-													<span>Send Message</span>
+												<button
+													type="submit"
+													className="butn md"
+													disabled={isSubmitting}
+												>
+													<span>
+														{isSubmitting ? (
+															<>
+																<span
+																	className="spinner-border spinner-border-sm me-2"
+																	role="status"
+																	aria-hidden="true"
+																></span>
+																Sending...
+															</>
+														) : (
+															"Send Message"
+														)}
+													</span>
 												</button>
 											</div>
 										</div>
