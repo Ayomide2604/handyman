@@ -43,15 +43,15 @@ const About = () => {
 							</p>
 							<ul className="list-unstyled border-bottom mb-1-9 pb-1-9">
 								<li className="mb-3">
-									<i className="fa-regular fa-circle-dot text-secondary me-3" />
+									<i className="bi bi-circle-fill text-secondary me-3" />
 									Creative Work Insight
 								</li>
 								<li className="mb-3">
-									<i className="fa-regular fa-circle-dot text-secondary me-3" />
+									<i className="bi bi-circle-fill text-secondary me-3" />
 									Always Work With Energetic Team
 								</li>
 								<li>
-									<i className="fa-regular fa-circle-dot text-secondary me-3" />
+									<i className="bi bi-circle-fill text-secondary me-3" />
 									We are Award Winning Company
 								</li>
 							</ul>
