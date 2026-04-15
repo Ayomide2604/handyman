@@ -1,38 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 const ContactFormSection = () => {
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		subject: "",
-		message: "",
-	});
-
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-	) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
-	};
-
-	const handleSubmit = (e: React.FormEvent) => {
-		e.preventDefault();
-		// Handle form submission here
-		console.log("Form submitted:", formData);
-		alert("Thank you for your message! We will get back to you soon.");
-		// Reset form
-		setFormData({
-			name: "",
-			email: "",
-			subject: "",
-			message: "",
-		});
-	};
-
 	return (
 		<section>
 			<div className="container">
@@ -43,7 +13,17 @@ const ContactFormSection = () => {
 								<span className="small-text">Contact Form</span>
 								<h2 className="display-5">Send Us a Message</h2>
 							</div>
-							<form className="contact quform" onSubmit={handleSubmit}>
+							<form
+								className="contact quform"
+								action="https://formspree.io/f/mpqkqolv"
+								method="POST"
+							>
+								<input
+									type="hidden"
+									name="_subject"
+									value="New Contact Form Submission"
+								/>
+								<input type="hidden" name="_template" value="table" />
 								<div className="quform-elements">
 									<div className="row">
 										{/* Name Input */}
@@ -59,8 +39,6 @@ const ContactFormSection = () => {
 														type="text"
 														name="name"
 														placeholder="Your name here"
-														value={formData.name}
-														onChange={handleChange}
 														required
 													/>
 												</div>
@@ -80,8 +58,6 @@ const ContactFormSection = () => {
 														type="email"
 														name="email"
 														placeholder="Your email here"
-														value={formData.email}
-														onChange={handleChange}
 														required
 													/>
 												</div>
@@ -102,8 +78,6 @@ const ContactFormSection = () => {
 														type="text"
 														name="subject"
 														placeholder="Your subject here"
-														value={formData.subject}
-														onChange={handleChange}
 														required
 													/>
 												</div>
@@ -123,8 +97,6 @@ const ContactFormSection = () => {
 														name="message"
 														rows={3}
 														placeholder="Tell us a few words"
-														value={formData.message}
-														onChange={handleChange}
 														required
 													></textarea>
 												</div>
