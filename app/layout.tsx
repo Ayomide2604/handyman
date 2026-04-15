@@ -25,13 +25,8 @@ export default function RootLayout({
 					integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
 					crossOrigin="anonymous"
 				/>
-				<link
-					rel="stylesheet"
-					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-					integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-					crossOrigin="anonymous"
-					referrerPolicy="no-referrer"
-				/>
+
+				{/* Font Awesome: rules live in plugins.css; webfonts are self-hosted under /assets/fonts/ (matches @font-face paths). Avoids CDN/SRI failures on production. */}
 
 				{/* CSS */}
 				<link rel="stylesheet" href="/assets/css/plugins.css" />
