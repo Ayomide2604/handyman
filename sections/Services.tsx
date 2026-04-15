@@ -51,18 +51,19 @@ const Services = () => {
 							<div className="card rounded-0 border-0 card-style05 h-100">
 								<div className="card-body">
 									<div className="text-center mb-3">
-										<Image
-											src={service.image}
-											alt={`Professional ${service.title} services in Edmonton`}
-											width={300}
-											height={200}
-											className="img-fluid"
-											style={{
-												borderRadius: "8px",
-												objectFit: "cover",
-												objectPosition: "center",
-											}}
-										/>
+										<div style={{ height: "200px", width: "100%" }}>
+											<Image
+												src={service.image}
+												alt={`Professional ${service.title} services in Edmonton`}
+												fill
+												className="img-fluid"
+												style={{
+													borderRadius: "8px",
+													objectFit: "cover",
+													objectPosition: "center",
+												}}
+											/>
+										</div>
 									</div>
 									<div className="title">
 										<div className="blue-bg" />
