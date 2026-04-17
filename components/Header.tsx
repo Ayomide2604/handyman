@@ -120,6 +120,14 @@ const Header = () => {
 												<span className="text-white">Get Free Quote</span>
 											</a>
 										</li>
+										<li className="d-lg-none">
+											<a href="tel:7808026830" className="butn md">
+												<span className="text-white">
+													<i className="bi bi-telephone-fill me-2"></i>
+													Call Us Now
+												</span>
+											</a>
+										</li>
 									</ul>
 									{/* end menu area */}
 									{/* start attribute navigation */}

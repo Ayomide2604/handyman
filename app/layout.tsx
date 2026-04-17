@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import Footer from "@/components/Footer";
+import TopBar from "@/components/TopBar";
 
 export const metadata: Metadata = {
 	title:
@@ -21,7 +22,6 @@ export const metadata: Metadata = {
 		locale: "en_CA",
 	},
 	robots: "index, follow",
-	
 };
 
 export default function RootLayout({
@@ -61,6 +61,7 @@ export default function RootLayout({
 
 				{/* Main Wrapper */}
 				<div className="main-wrapper">
+					<TopBar />
 					<Header />
 					{children}
 					<Footer />

@@ -1,3 +1,33 @@
+/* Topbar Styles */
+.topbar {
+	background-color: #1a1a1a;
+	border-bottom: 1px solid #333;
+	font-size: 14px;
+}
+
+.topbar .small {
+	font-weight: 400;
+}
+
+.topbar i {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.topbar a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.topbar a:hover {
+	color: #063b8b;
+}
+
+.topbar .text-secondary-hover:hover {
+	color: #063b8b !important;
+}
+
 #preloader {
 	position: fixed;
 	top: 0;
