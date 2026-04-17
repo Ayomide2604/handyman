@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import TopBar from "@/components/TopBar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
 	title:
@@ -65,6 +66,7 @@ export default function RootLayout({
 					<Header />
 					{children}
 					<Footer />
+					<WhatsAppButton />
 				</div>
 
 				{/* JS Scripts */}
