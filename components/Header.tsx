@@ -63,26 +63,44 @@ const Header = () => {
 								<nav className="navbar navbar-expand-lg navbar-light p-0">
 									<div className="navbar-header navbar-header-custom">
 										{/* start logo */}
-										<a href="/" className="navbar-brand">
-											<Image
-												ref={logoDefaultRef}
-												className="logo-default ms-3"
-												src="/logo.png"
-												alt="Handyman Pro Plus Logo"
-												width={150}
-												height={50}
-												style={{ display: "none", transform: "scale(1.5)" }}
-											/>
-											<Image
-												ref={logoScrolledRef}
-												className="logo-scrolled ms-3"
-												src="/logo-dark.png"
-												alt="Handyman Pro Plus Logo"
-												width={150}
-												height={50}
-												style={{ display: "none", transform: "scale(1.5)" }}
-											/>
-										</a>
+										<div className="d-flex align-items-center">
+											<a href="/" className="navbar-brand">
+												<Image
+													ref={logoDefaultRef}
+													className="logo-default ms-3"
+													src="/logo.png"
+													alt="Handyman Pro Plus Logo"
+													width={150}
+													height={50}
+													style={{ display: "none", transform: "scale(1.5)" }}
+												/>
+												<Image
+													ref={logoScrolledRef}
+													className="logo-scrolled ms-3"
+													src="/logo-dark.png"
+													alt="Handyman Pro Plus Logo"
+													width={150}
+													height={50}
+													style={{ display: "none", transform: "scale(1.5)" }}
+												/>
+											</a>
+											<div className="ms-3 d-none d-lg-block">
+												<a
+													href="tel:7808026830"
+													className="text-decoration-none"
+												>
+													<span
+														style={{
+															fontSize: "18px",
+															fontWeight: "bold",
+															color: "#FFD700",
+														}}
+													>
+														(780) 802-6830
+													</span>
+												</a>
+											</div>
+										</div>
 										{/* end logo */}
 									</div>
 									<button
@@ -118,14 +136,6 @@ const Header = () => {
 										<li className="d-lg-none">
 											<a href="/contact" className="butn secondary md">
 												<span className="text-white">Get Free Quote</span>
-											</a>
-										</li>
-										<li className="d-lg-none">
-											<a href="tel:7808026830" className="butn md">
-												<span className="text-white">
-													<i className="bi bi-telephone-fill me-2"></i>
-													Call Us Now
-												</span>
 											</a>
 										</li>
 									</ul>
