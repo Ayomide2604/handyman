@@ -1,16 +1,6 @@
 import React from "react";
 
 const MeetOwnerSection = () => {
-	const socialLinks = [
-		{ icon: "bi-facebook", color: "text-primary", link: "#" },
-		{ icon: "bi-instagram", color: "text-danger", link: "#" },
-		{
-			icon: "bi-envelope",
-			color: "text-dark",
-			link: "mailto:info@handymanpro.ca",
-		},
-	];
-
 	return (
 		<section className="py-6">
 			<div className="container">
@@ -44,15 +34,12 @@ const MeetOwnerSection = () => {
 									craftsmanship have established Handyman Pro Plus as a trusted
 									name in the Edmonton area.
 								</p>
-								<ul className="agent-social-links list-unstyled d-flex mb-0">
-									{socialLinks.map((social, index) => (
-										<li key={index} className="me-2">
-											<a href={social.link} className={social.color}>
-												<i className={`bi ${social.icon}`}></i>
-											</a>
-										</li>
-									))}
-								</ul>
+								<a
+									href="mailto:homerepair@handymanplusservices.com"
+									className="butn secondary md"
+								>
+									Send a Message
+								</a>
 							</div>
 						</div>
 					</div>
