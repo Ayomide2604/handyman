@@ -34,9 +34,9 @@ const CareersHeroSection = () => {
 								with a company that values expertise and rewards excellence.
 							</p>
 							<div className="d-flex gap-3 flex-wrap">
-								<a href="#positions" className="butn me-2 my-1 my-sm-0">
+								{/* <a href="#positions" className="butn me-2 my-1 my-sm-0">
 									<span>View Open Positions</span>
-								</a>
+								</a> */}
 								<a href="#application" className="butn secondary my-1 my-sm-0">
 									Apply Now
 								</a>
