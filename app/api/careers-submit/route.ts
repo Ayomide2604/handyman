@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Only initialize Resend if API key is available
+const resend = process.env.RESEND_API_KEY
+	? new Resend(process.env.RESEND_API_KEY)
+	: null;
 
 export async function POST(request: NextRequest) {
 	try {
@@ -65,6 +68,13 @@ export async function POST(request: NextRequest) {
 		console.log("Sending email with data:", JSON.stringify(emailData, null, 2));
 
 		// Send email using Resend
+		if (!resend) {
+			return NextResponse.json(
+				{ error: "Email service not configured in production" },
+				{ status: 500 },
+			);
+		}
+
 		const { data, error } = await resend.emails.send(emailData);
 
 		if (error) {
