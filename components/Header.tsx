@@ -131,6 +131,9 @@ const Header = () => {
 											<a href="/services">Services</a>
 										</li>
 										<li>
+											<a href="/careers">Careers</a>
+										</li>
+										<li>
 											<a href="/contact">Contact Us</a>
 										</li>
 										<li className="d-lg-none">
