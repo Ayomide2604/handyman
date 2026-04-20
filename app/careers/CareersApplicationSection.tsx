@@ -169,8 +169,8 @@ const CareersApplicationSection = () => {
 					<body>
 						<div class="email-container">
 							<div class="header">
-								<img src="https://handymanplusservices.com/logo.png" alt="Handyman Pro Plus" class="logo">
-								<h1 class="company-name">Handyman Pro Plus</h1>
+								<img src="https://handymanplusservices.com/logo.png" alt="Handyman Plus Services" class="logo">
+								<h1 class="company-name">Handyman Plus Services</h1>
 								<p class="tagline">Professional Handyman Services Since 1945</p>
 							</div>
 							
@@ -236,7 +236,7 @@ const CareersApplicationSection = () => {
 							</div>
 							
 							<div class="footer">
-								<p>&copy; 2025 Handyman Pro Plus. All rights reserved.</p>
+								<p>&copy; 2025 Handyman Plus Services. All rights reserved.</p>
 								<p style="margin-top: 10px; font-size: 11px; opacity: 0.8;">
 									This email was sent automatically from the careers application form.<br>
 									Please reply directly to the applicant's email address above.

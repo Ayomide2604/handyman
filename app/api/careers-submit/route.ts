@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
 
 		// Prepare email data according to Resend API
 		const emailData: any = {
-			from: "Handyman Pro Plus <noreply@handymanplusservices.com>",
+			from: "Handyman Plus Services <noreply@handymanplusservices.com>",
 			to: [to],
 			subject,
 			html,
