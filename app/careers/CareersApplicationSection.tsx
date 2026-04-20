@@ -280,6 +280,14 @@ const CareersApplicationSection = () => {
 					resume: null,
 				});
 
+				// Scroll to top of form to show success message
+				setTimeout(() => {
+					const formElement = document.getElementById("application");
+					if (formElement) {
+						formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+					}
+				}, 100);
+
 				setTimeout(() => {
 					setShowSuccess(false);
 				}, 5000);
