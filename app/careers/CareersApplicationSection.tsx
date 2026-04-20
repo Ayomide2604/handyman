@@ -209,20 +209,17 @@ const CareersApplicationSection = () => {
 								${
 									formData.resume
 										? `
-								<div class="resume-section">
-									<div class="info-label">📄 Resume/CV Uploaded</div>
+								<div class="info-item">
+									<div class="info-label"> Resume/CV</div>
 									<div class="info-value">
 										<strong>${formData.resume.name}</strong><br>
-										<span style="font-size: 14px; color: #666;">Click the button below to download the resume</span>
+										<span style="font-size: 14px; color: #666;">Resume attached to this email</span>
 									</div>
-									<a href="cid:resume" class="download-btn" download="${formData.resume.name}">
-										📥 Download Resume
-									</a>
 								</div>
 								`
 										: `
-								<div class="resume-section" style="background: #fff3cd; border-color: #ffc107;">
-									<div class="info-label">📄 Resume/CV</div>
+								<div class="info-item" style="background: #fff3cd; border-left-color: #ffc107;">
+									<div class="info-label"> Resume/CV</div>
 									<div class="info-value">No resume uploaded</div>
 								</div>
 								`
